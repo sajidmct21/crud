@@ -1,0 +1,19 @@
+<form class="mt-3" [formGroup]="fruitForm" (ngSubmit)="onSubmit()">
+    <div>
+        <label for="id" class="form-label">ID</label>
+        <input type="text" class="form-control" name="id" formControlName="id">
+    </div>
+    <div>
+        <label for="name" class="form-label">Name</label>
+        <input type="text" class="form-control" name="name" formControlName="name">
+    </div>
+    <div>
+        <label for="quantity" class="form-label">Quantity</label>
+        <input type="text" class="form-control" name="quantity" formControlName="quantity">
+    </div>
+    <div>
+        <label for="price" class="form-label">Price</label>
+        <input type="text" class="form-control" name="price" formControlName="price">
+    </div>
+    <button class="btn btn-primary" type="submit">Update</button>
+</form>
